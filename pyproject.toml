@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "algorithmic-thinking"
+version = "0.1.0"
+description = "Problems for the book Algorithmic Thinking: A Problem-based Introduction translated into Python"
+authors = ["John Sattari <jsattari3@gmail.com>"]
+readme = "README.md"
+packages = [{include = "algorithmic_thinking"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.2.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

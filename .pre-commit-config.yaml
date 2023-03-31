@@ -1,0 +1,18 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+  - repo: https://github.com/pre-commit/mirrors-autopep8
+    rev: 8e87b31ef06ada13f1d78859f6cb634124311559
+    hooks:
+      - id: autopep8
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: b176ead5d5b92b1d4e651c118017f8fd32de424a
+    hooks:
+      - id: mypy
